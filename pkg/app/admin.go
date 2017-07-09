@@ -11,7 +11,7 @@ func adminLogin(w http.ResponseWriter, r *http.Request) {
 }
 
 func adminList(w http.ResponseWriter, r *http.Request) {
-
+	view.AdminList(w, nil)
 }
 
 func adminCreate(w http.ResponseWriter, r *http.Request) {

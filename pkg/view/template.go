@@ -16,6 +16,7 @@ var (
 	tpIndex      = parseTemplate("root.tmpl", "index.tmpl")
 	tpNewsID     = parseTemplate("root.tmpl", "newsid.tmpl")
 	tpAdminLogin = parseTemplate("root.tmpl", "admin/login.tmpl")
+	tpAdminList  = parseTemplate("root.tmpl", "admin/list.tmpl")
 )
 
 var m = minify.New()
@@ -71,4 +72,9 @@ func NewsID(w http.ResponseWriter, data interface{}) {
 // AdminLogin renders admin login view
 func AdminLogin(w http.ResponseWriter, data interface{}) {
 	render(tpAdminLogin, w, data)
+}
+
+// AdminList renders admin login view
+func AdminList(w http.ResponseWriter, data interface{}) {
+	render(tpAdminList, w, data)
 }
