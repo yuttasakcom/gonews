@@ -1,14 +1,39 @@
 {{define "root-body"}}
-<div>
-  Index Page
+<div class="container container-news">
+
+  <h3>รายการข่าว</h3>
+  <hr>
+  
+  <div class="card-news">
+    <div class="row">
+      <div class="col-lg-4 col-md-12 mb-3">
+        <img class="img-thumbnail" src="/-/img/443a807c58e902bf030d5d09eaf46747.png">
+      </div>
+      <div class="col-lg-8 col-md-12">
+        <h4 class="card-title">ITU จัดอันดับความพร้อมของประเทศด้าน Cybersecurity, สิงคโปร์แชมป์ ไทยอันดับ 22</h4>
+          <p class="card-text">
+            International Telecommunication Union (ITU) หรือสหภาพโทรคมนาคมระหว่างประเทศ หน่วยงานในสังกัดสหประชาชาติ สำรวจความพร้อมของประเทศต่างๆ ทั่วโลกว่าพร้อมรับมือปัญหา cybersecurity มากแค่ไหน โดยให้คะแนนในด้านต่างๆ แล้วจัดทำเป็นดัชนี Global Cybersecurity Index (GCI) .....
+          </p>
+          <p><a href="#">อ่านต่อ</a></p>
+      </div>
+    </div>
+  </div>
+  
 </div>
 {{end}}
 
 {{define "root-script"}}
-<script>
-  console.log("index")
-</script>
 {{end}}
 
 {{define "root-style"}}
+<style>
+.container-news {
+  margin-top: 80px;
+  padding: 20px;
+}
+.card-news {
+  margin-top: 10px;
+  padding: 20px;
+}
+</style>
 {{end}}
