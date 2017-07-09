@@ -14,6 +14,7 @@ import (
 
 var (
 	tpIndex      = parseTemplate("root.tmpl", "index.tmpl")
+	tpNewsID     = parseTemplate("root.tmpl", "newsid.tmpl")
 	tpAdminLogin = parseTemplate("root.tmpl", "admin/login.tmpl")
 )
 
@@ -60,6 +61,11 @@ func render(t *template.Template, w http.ResponseWriter, data interface{}) {
 // Index renders index view
 func Index(w http.ResponseWriter, data interface{}) {
 	render(tpIndex, w, data)
+}
+
+// NewsID renders newsid view
+func NewsID(w http.ResponseWriter, data interface{}) {
+	render(tpNewsID, w, data)
 }
 
 // AdminLogin renders admin login view

@@ -7,7 +7,7 @@ import (
 // Mount mounts handlers to mux
 func Mount(mux *http.ServeMux) {
 	mux.HandleFunc("/", index)
-	mux.HandleFunc("/news/", newsViews)
+	mux.HandleFunc("/news/", newsID)
 
 	adminMux := http.NewServeMux()
 	adminMux.HandleFunc("/login", adminLogin)

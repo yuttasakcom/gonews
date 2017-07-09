@@ -15,3 +15,11 @@ footer {
   height: 100px;
   padding-top: 40px;
 }
+
+.container-news {
+  margin-top: 60px;
+  padding: 20px;
+}
+.card-news {
+  padding: 20px;
+}
