@@ -8,3 +8,10 @@ button {
 .red {
   color: red;
 }
+
+footer {
+  background-color: #000;
+  color: #fff;
+  height: 100px;
+  padding-top: 40px;
+}
