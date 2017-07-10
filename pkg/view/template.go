@@ -13,10 +13,11 @@ import (
 )
 
 var (
-	tpIndex      = parseTemplate("root.tmpl", "index.tmpl")
-	tpNewsID     = parseTemplate("root.tmpl", "newsid.tmpl")
-	tpAdminLogin = parseTemplate("root.tmpl", "admin/login.tmpl")
-	tpAdminList  = parseTemplate("root.tmpl", "admin/list.tmpl")
+	tpIndex           = parseTemplate("root.tmpl", "index.tmpl")
+	tpNewsID          = parseTemplate("root.tmpl", "newsid.tmpl")
+	tpAdminLogin      = parseTemplate("root.tmpl", "admin/login.tmpl")
+	tpAdminList       = parseTemplate("root.tmpl", "admin/list.tmpl")
+	tpAdminCreateNews = parseTemplate("root.tmpl", "admin/create.tmpl")
 )
 
 var m = minify.New()
@@ -77,4 +78,9 @@ func AdminLogin(w http.ResponseWriter, data interface{}) {
 // AdminList renders admin login view
 func AdminList(w http.ResponseWriter, data interface{}) {
 	render(tpAdminList, w, data)
+}
+
+// AdminCreateNews renders admin create form
+func AdminCreateNews(w http.ResponseWriter, data interface{}) {
+	render(tpAdminCreateNews, w, data)
 }

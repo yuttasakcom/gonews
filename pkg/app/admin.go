@@ -15,7 +15,7 @@ func adminList(w http.ResponseWriter, r *http.Request) {
 }
 
 func adminCreate(w http.ResponseWriter, r *http.Request) {
-
+	view.AdminCreateNews(w, nil)
 }
 
 func adminEdit(w http.ResponseWriter, r *http.Request) {

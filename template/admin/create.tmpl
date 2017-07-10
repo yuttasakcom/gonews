@@ -1,0 +1,36 @@
+{{define "root-body"}}
+<div class="container container-news">
+  <h3>Create News</h3>
+  <hr>
+
+  <form action="http://localhost:8080/admin/list">
+    <div class="form-group">
+      <label for="topic">Topic</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="exampleTextarea">Description</label>
+      <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+    </div>
+    <button class="btn btn-success">Submit</button>
+  </form>
+</div>
+{{end}}
+
+{{define "root-script"}}
+{{end}}
+
+{{define "root-style"}}
+<style>
+  footer {
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    background-color: #000;
+    color: #fff;
+    height: 100px;
+    padding-top: 40px;
+    width: 100%;
+  }
+</style>
+{{end}}
